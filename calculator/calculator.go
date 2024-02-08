@@ -2,8 +2,8 @@ package calculator
 
 import (
 	"errors"
-	"math"
 	"fmt"
+	"math"
 )
 
 func Add(a, b float64) float64 {
@@ -19,7 +19,7 @@ func Multiply(a, b float64) float64 {
 }
 
 func Divide(a, b float64) (float64, error) {
-	if b == 0{
+	if b == 0 {
 		return 0, errors.New("division by zero not allowed")
 	}
 	return a / b, nil
